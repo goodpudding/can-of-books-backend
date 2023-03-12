@@ -20,6 +20,11 @@ app.use(cors());
 
 const PORT = process.env.PORT || 3002;
 
+app.get('/books', getBooks);
+async function getBooks(req, res, next){
+  
+}
+
 app.get('/test', (request, response) => {
 
   response.send('test request received')
