@@ -29,6 +29,7 @@ async function getBooks(req, res, next) {
   try {
     let results = await Book.find({});
     res.status(200).send(results);
+    console.log('we got books');
   } catch (err) {
     next(err);
   }
