@@ -24,6 +24,7 @@ const PORT = process.env.PORT || 3002;
 app.get("/books", getBooks);
 app.post("/books", postBooks);
 app.delete("/books/:id", deleteBooks);
+app.delete("/books/:id", putBooks);
 
 async function getBooks(req, res, next) {
   try {
@@ -49,6 +50,16 @@ async function deleteBooks(req, res, next) {
     let id = req.params.id;
     await Book.findByIdAndDelete(id);
     res.status(200).send(id);
+  } catch (err) {
+    next(err);
+  }
+}
+async function putBooks(req, res, next) {
+  try {
+    let id = req.params.id;
+    let updatedBook = req.body;
+    let updatedBookFromDB = await Book.findByIdAndUpdate(id, updatedBook, {new:true, overwrite: true});
+    res.status(200).send(updatedBookFromDB);
   } catch (err) {
     next(err);
   }

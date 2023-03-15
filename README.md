@@ -25,6 +25,14 @@ This is a book recommendation app that tracks what books you've read, how you ra
 
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
 
+03-13-2023 3:59pm - Version 1.0.1-Application now has a fully-functional express server, with a GET route for the location resource.
+
+03-14-2023 3:30pm - Version 1.0.2-Application now has a route for delete and adding data to the database. Also seeded the database with 3 books.
+
+03-15-2023 12:05pm - Version 1.0.3-Application now has a update feature on the backend so the user is able to access and update the database.
+
+<!-- 03-16-2023 3:59pm - Version 1.0.1-Application now has a fully-functional express server, with a GET route for the location resource. -->
+
 ## Estimates
 <!-- See below -->
 
@@ -36,12 +44,39 @@ Estimate of time needed to complete: 4hrs
 
 Start time: 330pm
 
+Finish time: 530pm
+
+Actual time needed to complete: 2 hrs
+
+Notes: There was an issues with mongoose, where it would time out because my local computer was out of sync. I will need talk with
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Name of feature: Lab12
+
+Estimate of time needed to complete: 2 hrs
+
+Start time: 130pm
+
+Finish time: 330pm
+
+Actual time needed to complete: 2hrs
+
+Notes: Create routes to be able to create and delete entries from the database
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Name of feature: lab13
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
 Finish time: _____
 
 Actual time needed to complete: _____
 
-Notes: There was an issues with mongoose, where it would time out because my local computer was out of sync. I will need talk with
-
+Notes:
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++TEMPLATE++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
