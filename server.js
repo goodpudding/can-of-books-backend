@@ -24,7 +24,7 @@ const PORT = process.env.PORT || 3002;
 app.get("/books", getBooks);
 app.post("/books", postBooks);
 app.delete("/books/:id", deleteBooks);
-app.delete("/books/:id", putBooks);
+app.put("/books/:id", putBooks);
 
 async function getBooks(req, res, next) {
   try {
