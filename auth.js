@@ -24,3 +24,5 @@ function verifyUser(req, errorFirstOrUserCallbackFunction){
     errorFirstOrUserCallbackFunction('not authorized');
   }
 }
+
+module.exports = verifyUser;
